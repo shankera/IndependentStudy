@@ -1,0 +1,61 @@
+D:\MyDocs\IndependentStudy\Independent Study\obj\Debug\Independent Study.csprojResolveAssemblyReference.cache
+D:\MyDocs\IndependentStudy\Independent Study\bin\Independent Study.dll.config
+D:\MyDocs\IndependentStudy\Independent Study\bin\Independent Study.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Independent Study.pdb
+D:\MyDocs\IndependentStudy\Independent Study\bin\Antlr3.Runtime.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\EntityFramework.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\EntityFramework.SqlServer.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.AspNet.Identity.Core.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.Cookies.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.Facebook.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.Google.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.OAuth.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.Twitter.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Web.Infrastructure.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Newtonsoft.Json.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\Owin.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Net.Http.Formatting.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Helpers.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Http.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Http.WebHost.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Mvc.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Optimization.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Razor.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.WebPages.Deployment.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.WebPages.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.WebPages.Razor.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\WebGrease.dll
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Helpers.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Mvc.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Optimization.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Razor.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.WebPages.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.WebPages.Deployment.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.WebPages.Razor.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Antlr3.Runtime.pdb
+D:\MyDocs\IndependentStudy\Independent Study\bin\Newtonsoft.Json.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Net.Http.Formatting.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Http.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\System.Web.Http.WebHost.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\EntityFramework.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\EntityFramework.SqlServer.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.AspNet.Identity.Core.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.Facebook.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.Cookies.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.OAuth.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.Google.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.Twitter.xml
+D:\MyDocs\IndependentStudy\Independent Study\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\MyDocs\IndependentStudy\Independent Study\obj\Debug\Independent Study.dll
+D:\MyDocs\IndependentStudy\Independent Study\obj\Debug\Independent Study.pdb
