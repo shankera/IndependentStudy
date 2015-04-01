@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -164,7 +163,7 @@ namespace Independent_Study.Controllers
         // GET: /Manage/VerifyPhoneNumber
         public async Task<ActionResult> VerifyPhoneNumber(string phoneNumber)
         {
-            var code = await UserManager.GenerateChangePhoneNumberTokenAsync(User.Identity.GetUserId(), phoneNumber);
+            await UserManager.GenerateChangePhoneNumberTokenAsync(User.Identity.GetUserId(), phoneNumber);
             // Send an SMS through the SMS provider to verify the phone number
             return phoneNumber == null ? View("Error") : View(new VerifyPhoneNumberViewModel { PhoneNumber = phoneNumber });
         }
@@ -360,7 +359,7 @@ namespace Independent_Study.Controllers
             }
             return false;
         }
-
+        /*
         private bool HasPhoneNumber()
         {
             var user = UserManager.FindById(User.Identity.GetUserId());
@@ -370,7 +369,7 @@ namespace Independent_Study.Controllers
             }
             return false;
         }
-
+        */
         public enum ManageMessageId
         {
             AddPhoneSuccess,

@@ -8,7 +8,7 @@ namespace Independent_Study.Models
         public DateTime TimeStamp { get; set; }
         public string MessageId { get; set; }
         public string User { get; set; }
-        public string Group { get; set; }
+        public string Channel { get; set; }
         public string Body { get; set; }
     }
 }
