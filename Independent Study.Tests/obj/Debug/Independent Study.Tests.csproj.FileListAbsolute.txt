@@ -1,0 +1,52 @@
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Independent Study.Tests.dll.config
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Independent Study.Tests.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Independent Study.Tests.pdb
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Independent Study.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Moq.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Newtonsoft.Json.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Ploeh.AutoFixture.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Helpers.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Mvc.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Razor.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.WebPages.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Http.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Optimization.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.Owin.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Owin.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\EntityFramework.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.Owin.Security.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Http.WebHost.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Net.Http.Formatting.dll
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Independent Study.pdb
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Moq.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Ploeh.AutoFixture.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Newtonsoft.Json.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Helpers.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Mvc.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Razor.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.WebPages.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Http.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Optimization.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.Owin.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\EntityFramework.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.Owin.Security.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Web.Http.WebHost.xml
+T:\Programming\Independent Study\Independent Study.Tests\bin\Debug\System.Net.Http.Formatting.xml
+T:\Programming\Independent Study\Independent Study.Tests\obj\Debug\Independent Study.Tests.csprojResolveAssemblyReference.cache
+T:\Programming\Independent Study\Independent Study.Tests\obj\Debug\Independent Study.Tests.dll
+T:\Programming\Independent Study\Independent Study.Tests\obj\Debug\Independent Study.Tests.pdb

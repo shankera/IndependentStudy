@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Independent_Study.Models
 {
-    public class MessageDatabaseModel
+    public class MessageDatabaseModel : IMessageDatabaseModel
     {
-        public IEnumerable<Message> GetByGroup(string s)
+        public IEnumerable<Message> GetByChannel(string channelName)
         {
             throw new NotImplementedException();
         }

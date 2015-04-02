@@ -6,8 +6,13 @@ namespace Independent_Study.Worker
 {
     public class MessageWorker
     {
-        private static MessageDatabaseModel _model;
-        public MessageWorker(MessageDatabaseModel model)
+        private static IMessageDatabaseModel _model;
+
+        private MessageWorker()
+        {
+            
+        }
+        public static void Initialize(IMessageDatabaseModel model)
         {
             _model = model;
         }
@@ -32,7 +37,7 @@ namespace Independent_Study.Worker
         }
         public static IEnumerable<Message> GetMessagesByChannel(string param)
         {
-            return _model.GetByGroup(param);
+            return _model.GetByChannel(param);
         }
 
         public static IEnumerable<Message> GetMessagesContainingString(string value)
