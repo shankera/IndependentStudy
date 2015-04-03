@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.EnterpriseServices;
 using Independent_Study.Models;
 
 namespace Independent_Study.Worker
@@ -47,10 +48,13 @@ namespace Independent_Study.Worker
 
         public static void PutNewMessage(int userId, string user, string channel, string value)
         {
+            if(userId == -1)throw new ArgumentException("UserID does not exist.", "userId");
             var channelString = channel ?? "#general";
             var messageId = Guid.NewGuid().ToString();
+            var userName = user ?? "Anonymous";
             _model.PutNewMessage(new Message
             {
+                User = userName,
                 UserId = userId,
                 MessageId = messageId,
                 Channel = channelString,

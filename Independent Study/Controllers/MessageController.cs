@@ -20,11 +20,7 @@ namespace Independent_Study.Controllers
         // GET: api/Message?userid=5 or api/Message?messageid=5
         public IEnumerable<Message> Get(int userId)
         {
-            var vals = Request.GetQueryNameValuePairs().ToList();
-
-            if (vals[0].Key.Equals("userId", StringComparison.InvariantCultureIgnoreCase))
-                return MessageWorker.GetMessageByUser(Int32.Parse(vals[0].Value));
-            throw new HttpResponseException(HttpStatusCode.BadRequest);
+             return MessageWorker.GetMessageByUser(userId);
         }
 
         // GET: api/Message~~~ <--- I have no idea how this will work lol
@@ -36,15 +32,7 @@ namespace Independent_Study.Controllers
         // GET: api/Message?strval=keyword
         public IEnumerable<Message> Get(string strVal)
         {
-            var vals = Request.GetQueryNameValuePairs().ToList();
-            if (vals.Count() != 1) return null;
-            if (vals[0].Key.Equals("channelId", StringComparison.InvariantCultureIgnoreCase) && vals[0].Value.StartsWith("#"))
-                return MessageWorker.GetMessagesByChannel(vals[0].Value);
-            if (vals[0].Key.Equals("queryString", StringComparison.InvariantCultureIgnoreCase))
-                return MessageWorker.GetMessagesContainingString(vals[0].Value);
-            if (vals[0].Key.Equals("messageId", StringComparison.InvariantCultureIgnoreCase))
-                return MessageWorker.GetMessageById(vals[0].Value);
-            throw new HttpResponseException(HttpStatusCode.BadRequest);
+            return ParseHelper.Parse(Request);
         }
 
         // POST: api/Message?id=1

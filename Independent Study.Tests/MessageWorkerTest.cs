@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Web.UI.WebControls;
 using Independent_Study.Models;
 using Independent_Study.Worker;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -154,19 +156,50 @@ namespace Independent_Study.Tests
         [TestMethod]
         public void GetMessagesQuery()
         {
+            const string searchVar = "word";
+            var data = _fixture.CreateMany<Message>().ToList();
+            var data2 = _fixture.CreateMany<Message>().ToList();
+            data2.ForEach(x =>x.Body+=searchVar);
+            data.AddRange(data2);
 
+
+            _mock.Setup(x => x.GetMessagesContaining(searchVar)).Returns(data.Where(x => x.Body.Contains(searchVar)));
+
+            MessageWorker.Initialize(_mock.Object);
+
+            Assert.IsTrue(MessageWorker.GetMessagesContainingString("word").ToList().Any(x => data.Contains(x)));
         }
 
         [TestMethod]
         public void PostValid()
         {
-            
-        }
+            var data = _fixture.CreateMany<Message>().ToList();
+            var count = data.Count;
+            _mock.Setup(x => x.PutNewMessage(It.IsAny<Message>())).Callback((Message m) => data.Add(m));
 
-        [TestMethod]
-        public void PostChannelNull()
+            MessageWorker.Initialize(_mock.Object);
+            MessageWorker.PutNewMessage(1, "user", "#reactive", "Improptu comments are hard to think of.");
+            Assert.IsTrue(data.Count == ++count);
+            MessageWorker.PutNewMessage(1, "user", "#reactive", "Improptu comments are hard to think of.");
+            Assert.IsTrue(data.Count == ++count);
+            MessageWorker.PutNewMessage(2, null, "#reactive", "Improptu comments are hard to think of.");
+            Assert.IsTrue(data.Count == ++count);
+            MessageWorker.PutNewMessage(3, "user", null, "Improptu comments are hard to think of.");
+            Assert.IsTrue(data.Count == ++count);
+            MessageWorker.PutNewMessage(3, "user", "#reactive", null);
+            Assert.IsTrue(data.Count == ++count);
+            MessageWorker.PutNewMessage(4, null, null, null);
+            Assert.IsTrue(data.Count == ++count);
+        }
+        [TestMethod, ExpectedException(typeof(ArgumentException))]
+        public void PostInvalid()
         {
-            
+            var data = _fixture.CreateMany<Message>().ToList();
+            var count = data.Count;
+            _mock.Setup(x => x.PutNewMessage(It.IsAny<Message>())).Callback((Message m) => data.Add(m));
+
+            MessageWorker.Initialize(_mock.Object);
+            MessageWorker.PutNewMessage(-1,null,null,null);
         }
     }
 }
