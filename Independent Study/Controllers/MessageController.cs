@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Web.Http;
 using Independent_Study.Models;
 using Independent_Study.Worker;
@@ -11,42 +13,58 @@ namespace Independent_Study.Controllers
 {
     public class MessageController : ApiController
     {
-        // GET: api/Message
         public IEnumerable<Message> Get()
         {
             return MessageWorker.GetAllMessages();
         }
 
-        // GET: api/Message?userid=5 or api/Message?messageid=5
-        public IEnumerable<Message> Get(int userId)
+        [WebGet(UriTemplate = "?userId={userId}")]
+        [OperationContract]
+        public IEnumerable<Message> GetByUser(int userId)
         {
              return MessageWorker.GetMessageByUser(userId);
         }
 
-        // GET: api/Message~~~ <--- I have no idea how this will work lol
-        public IEnumerable<Message> Get(DateTime startTime)
+        [WebGet(UriTemplate = "?afterTime={startTime}")]
+        [OperationContract]
+        public IEnumerable<Message> GetAfterStartTime(DateTime startTime)
         {
             return MessageWorker.GetMessageAfterTime(startTime);
         }
 
-        // GET: api/Message?strval=keyword
-        public IEnumerable<Message> Get(string strVal)
+        [WebGet(UriTemplate = "?channelId={channelId}")]
+        [OperationContract]
+        public IEnumerable<Message> GetByChannel(string channelId)
         {
-            return ParseHelper.Parse(Request);
+            return MessageWorker.GetMessagesByChannel(channelId);
         }
 
-        // POST: api/Message?id=1
-        public void Post(int id, string user, [FromBody]string value)
+        [WebGet(UriTemplate = "?queryString={strVal}")]
+        [OperationContract]
+        public IEnumerable<Message> GetByQuery(string strVal)
         {
-            if(user == null) throw new HttpResponseException(HttpStatusCode.BadRequest);
-            MessageWorker.PutNewMessage(id, user, null, value);
+            return MessageWorker.GetMessagesContainingString(strVal);
+        }
+        
+        [WebGet(UriTemplate = "?messageId={messageId}")]
+        [OperationContract]
+        public IEnumerable<Message> GetByMessage(string messageId)
+        {
+            return MessageWorker.GetMessageById(messageId);
+        }
+        
+        [WebInvoke(Method = "PUT", UriTemplate = "user/{username}/Id/{userId}/{strVal}")]
+        [OperationContract]
+        public void Post(string username, int id, string strVal)
+        {
+            MessageWorker.PutNewMessage(id, username, null, strVal);
         }
 
-        // PUT: api/
-        public void Put(int id, string user, string channelId, [FromBody]string value)
+        [WebInvoke(Method = "PUT", UriTemplate = "user/{username}/Id/{userId}/{channel}{strVal}")]
+        [OperationContract]
+        public void Post(string username, int id, string channel, string strVal)
         {
-            if (user == null) throw new HttpResponseException(HttpStatusCode.BadRequest);
-            MessageWorker.PutNewMessage(id, user, channelId, value);
+            MessageWorker.PutNewMessage(id, username, channel, strVal);
         }
 
         // DELETE: api/

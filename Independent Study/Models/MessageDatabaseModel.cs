@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 
 namespace Independent_Study.Models
 {
@@ -7,37 +9,58 @@ namespace Independent_Study.Models
     {
         public IEnumerable<Message> GetByChannel(string channelName)
         {
-            throw new NotImplementedException();
+            using(var db = new MessageContext())
+            {
+                return db.Messages.Where(x => x.Channel.Equals(channelName));
+            }
         }
 
         public IEnumerable<Message> GetAll()
         {
-            throw new NotImplementedException();
+            using (var db = new MessageContext())
+            {
+                return db.Messages.ToList();
+            }
         }
 
         public IEnumerable<Message> GetByMessageId(string messageId)
         {
-            throw new NotImplementedException();
+            using (var db = new MessageContext())
+            {
+                return db.Messages.Where(x => x.MessageId.Equals(messageId));
+            }
         }
 
         public IEnumerable<Message> GetByUserId(int userId)
         {
-            throw new NotImplementedException();
+            using (var db = new MessageContext())
+            {
+                return db.Messages.Where(x => x.UserId == userId);
+            }
         }
 
         public IEnumerable<Message> GetAfterTime(DateTime startTime)
         {
-            throw new NotImplementedException();
+            using (var db = new MessageContext())
+            {
+                return db.Messages.Where(x => x.TimeStamp > startTime);
+            }
         }
 
         public IEnumerable<Message> GetMessagesContaining(string value)
         {
-            throw new NotImplementedException();
+            using (var db = new MessageContext())
+            {
+                return db.Messages.Where(x => x.Body.Contains(value));
+            }
         }
 
         public void PutNewMessage(Message message)
         {
-            throw new NotImplementedException();
+            using (var db = new MessageContext())
+            {
+                db.Messages.Add(message);
+            }
         }
     }
 }
