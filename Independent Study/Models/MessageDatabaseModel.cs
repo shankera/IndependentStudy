@@ -11,7 +11,7 @@ namespace Independent_Study.Models
         {
             using(var db = new MessageContext())
             {
-                return db.Messages.Where(x => x.Channel.Equals(channelName));
+                return db.Messages.Where(x => x.Channel.Equals(channelName)).ToList();
             }
         }
 

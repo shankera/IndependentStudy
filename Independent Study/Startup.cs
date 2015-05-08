@@ -8,7 +8,7 @@ namespace Independent_Study
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            app.MapSignalR();
         }
     }
 }

@@ -22,5 +22,10 @@ namespace Independent_Study.Controllers
 
             return View();
         }
+
+        public ActionResult Chat()
+        {
+            return View();
+        }
     }
 }
