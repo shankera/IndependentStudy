@@ -52,7 +52,7 @@ namespace Independent_Study.Worker
             var channelString = channel ?? "#general";
             var messageId = Guid.NewGuid().ToString();
             var userName = user ?? "Anonymous";
-            _model.PutNewMessage(new Message
+            var msg = new Message
             {
                 User = userName,
                 UserId = userId,
@@ -60,7 +60,8 @@ namespace Independent_Study.Worker
                 Channel = channelString,
                 Body = value,
                 TimeStamp = DateTime.Now
-            });
+            };
+            _model.PutNewMessage(msg);
         }
     }
 }

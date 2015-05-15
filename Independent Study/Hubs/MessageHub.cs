@@ -1,19 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Microsoft.AspNet.SignalR;
+using System.Net.Http;
+using Independent_Study.Controllers;
 using Independent_Study.Models;
-using Microsoft.AspNet.SignalR.Hubs;
+using Independent_Study.Worker;
+using Microsoft.Ajax.Utilities;
+using Microsoft.AspNet.SignalR;
 
 namespace Independent_Study.Hubs
 {
-    [HubName("MessageHub")]
     public class MessageHub : Hub
     {
         public void Send(string message)
         {
-            Clients.All.addNewMessage(message);
+            if (message == "") return; 
+            var msg = new Message
+            {
+                User = "Anonymous",
+                UserId = 1,
+                Body = message,
+                TimeStamp = DateTime.Now,
+                Channel = "#general",
+                MessageId = Guid.NewGuid().ToString()
+            };
+            Clients.All.addNewMessage(msg.ToString());
+            MessageWorker.Initialize(new MessageDatabaseModel());
+            MessageWorker.PutNewMessage(1, null, null, message);
         }
     }
 }

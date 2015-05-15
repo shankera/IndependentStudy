@@ -13,6 +13,11 @@ namespace Independent_Study.Models
         public string Channel { get; set; }
         public string Body { get; set; }
         public virtual List<Channel> Channels { get; set; }
+
+        public override string ToString()
+        {
+            return "[" + new DateTime(TimeStamp.Ticks - (TimeStamp.Ticks % TimeSpan.TicksPerSecond), TimeStamp.Kind).TimeOfDay + "] " + Channel + " " + User + ": " + Body;
+        }
     }
 
     public class Channel
